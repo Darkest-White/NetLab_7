@@ -47,18 +47,11 @@
             this.tabPageRooms = new System.Windows.Forms.TabPage();
             this.listViewSubjects = new System.Windows.Forms.ListView();
             this.columnHeaderSubject = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tabPageSettlements = new System.Windows.Forms.TabPage();
-            this.listViewStudyPlans = new System.Windows.Forms.ListView();
-            this.columnHeaderStudentFio = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderSubjectsNumber = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderLectures = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderPractices = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeaderLaboratoryWorks = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPageStudyPlan = new System.Windows.Forms.TabPage();
             this.menuStripMain.SuspendLayout();
             this.tabControlMain.SuspendLayout();
             this.tabPageClients.SuspendLayout();
             this.tabPageRooms.SuspendLayout();
-            this.tabPageSettlements.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripMain
@@ -161,7 +154,7 @@
             // 
             this.tabControlMain.Controls.Add(this.tabPageClients);
             this.tabControlMain.Controls.Add(this.tabPageRooms);
-            this.tabControlMain.Controls.Add(this.tabPageSettlements);
+            this.tabControlMain.Controls.Add(this.tabPageStudyPlan);
             this.tabControlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControlMain.Location = new System.Drawing.Point(0, 24);
             this.tabControlMain.Name = "tabControlMain";
@@ -233,61 +226,15 @@
             this.columnHeaderSubject.Text = "Название предмета";
             this.columnHeaderSubject.Width = 456;
             // 
-            // tabPageSettlements
+            // tabPageStudyPlan
             // 
-            this.tabPageSettlements.Controls.Add(this.listViewStudyPlans);
-            this.tabPageSettlements.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSettlements.Name = "tabPageSettlements";
-            this.tabPageSettlements.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSettlements.Size = new System.Drawing.Size(534, 217);
-            this.tabPageSettlements.TabIndex = 2;
-            this.tabPageSettlements.Text = "Учебный план";
-            this.tabPageSettlements.UseVisualStyleBackColor = true;
-            // 
-            // listViewStudyPlans
-            // 
-            this.listViewStudyPlans.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeaderStudentFio,
-            this.columnHeaderSubjectsNumber,
-            this.columnHeaderLectures,
-            this.columnHeaderPractices,
-            this.columnHeaderLaboratoryWorks});
-            this.listViewStudyPlans.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listViewStudyPlans.FullRowSelect = true;
-            this.listViewStudyPlans.GridLines = true;
-            this.listViewStudyPlans.HideSelection = false;
-            this.listViewStudyPlans.Location = new System.Drawing.Point(3, 3);
-            this.listViewStudyPlans.Name = "listViewStudyPlans";
-            this.listViewStudyPlans.Size = new System.Drawing.Size(528, 211);
-            this.listViewStudyPlans.TabIndex = 2;
-            this.listViewStudyPlans.UseCompatibleStateImageBehavior = false;
-            this.listViewStudyPlans.View = System.Windows.Forms.View.Details;
-            this.listViewStudyPlans.KeyUp += new System.Windows.Forms.KeyEventHandler(this.listViewStudyPlan_KeyUp);
-            // 
-            // columnHeaderStudentFio
-            // 
-            this.columnHeaderStudentFio.Text = "ФИО студента";
-            this.columnHeaderStudentFio.Width = 216;
-            // 
-            // columnHeaderSubjectsNumber
-            // 
-            this.columnHeaderSubjectsNumber.Text = "Предмет";
-            this.columnHeaderSubjectsNumber.Width = 81;
-            // 
-            // columnHeaderLectures
-            // 
-            this.columnHeaderLectures.Text = "Лекции";
-            this.columnHeaderLectures.Width = 62;
-            // 
-            // columnHeaderPractices
-            // 
-            this.columnHeaderPractices.Text = "Практики";
-            this.columnHeaderPractices.Width = 69;
-            // 
-            // columnHeaderLaboratoryWorks
-            // 
-            this.columnHeaderLaboratoryWorks.Text = "Лабораторные";
-            this.columnHeaderLaboratoryWorks.Width = 124;
+            this.tabPageStudyPlan.Location = new System.Drawing.Point(4, 22);
+            this.tabPageStudyPlan.Name = "tabPageStudyPlan";
+            this.tabPageStudyPlan.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageStudyPlan.Size = new System.Drawing.Size(534, 217);
+            this.tabPageStudyPlan.TabIndex = 2;
+            this.tabPageStudyPlan.Text = "Учебный план";
+            this.tabPageStudyPlan.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -304,7 +251,6 @@
             this.tabControlMain.ResumeLayout(false);
             this.tabPageClients.ResumeLayout(false);
             this.tabPageRooms.ResumeLayout(false);
-            this.tabPageSettlements.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -327,16 +273,10 @@
         private System.Windows.Forms.TabControl tabControlMain;
         private System.Windows.Forms.TabPage tabPageClients;
         private System.Windows.Forms.TabPage tabPageRooms;
-        private System.Windows.Forms.TabPage tabPageSettlements;
+        private System.Windows.Forms.TabPage tabPageStudyPlan;
         private System.Windows.Forms.ListView listViewStudents;
         private System.Windows.Forms.ColumnHeader columnHeaderStudent;
         private System.Windows.Forms.ListView listViewSubjects;
         private System.Windows.Forms.ColumnHeader columnHeaderSubject;
-        private System.Windows.Forms.ListView listViewStudyPlans;
-        private System.Windows.Forms.ColumnHeader columnHeaderStudentFio;
-        private System.Windows.Forms.ColumnHeader columnHeaderSubjectsNumber;
-        private System.Windows.Forms.ColumnHeader columnHeaderLectures;
-        private System.Windows.Forms.ColumnHeader columnHeaderPractices;
-        private System.Windows.Forms.ColumnHeader columnHeaderLaboratoryWorks;
     }
 }

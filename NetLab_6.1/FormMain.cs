@@ -28,11 +28,11 @@ namespace NetLab_6
         {
             var studyPlan = sender as StudyPlan;
 
-            for (int i = 0; i < tabPageSettlements.Controls.Count; i++)
+            for (int i = 0; i < tabPageStudyPlan.Controls.Count; i++)
             {
-                if ((tabPageSettlements.Controls[i] as UserControlStudyPlan)?.StudyPlan == studyPlan)
+                if ((tabPageStudyPlan.Controls[i] as UserControlStudyPlan)?.StudyPlan == studyPlan)
                 {
-                    tabPageSettlements.Controls.RemoveAt(i);
+                    tabPageStudyPlan.Controls.RemoveAt(i);
                     break;
                 }
             }
@@ -69,7 +69,7 @@ namespace NetLab_6
                 UserControlStudyPlan userControl = new UserControlStudyPlan(studyPlan)
                 {
                     Dock = DockStyle.Top
-                }; tabPageSettlements.Controls.Add(userControl);
+                }; tabPageStudyPlan.Controls.Add(userControl);
             }
         }
         private void _facultatives_SubjectAdded(object sender, EventArgs e)
@@ -182,9 +182,9 @@ namespace NetLab_6
         {
             try
             {
-                for (int i = 0; i < tabPageSettlements.Controls.Count; i++)
+                for (int i = 0; i < tabPageStudyPlan.Controls.Count; i++)
                 {
-                    var userControl = tabPageSettlements.Controls[i] as UserControlStudyPlan;
+                    var userControl = tabPageStudyPlan.Controls[i] as UserControlStudyPlan;
                     if (userControl != null)
                     {
                         if (userControl.Selected)
@@ -243,24 +243,6 @@ namespace NetLab_6
                 catch (Exception)
                 {
                     MessageBox.Show("Не выбрана строка с предметом");
-                }
-            }
-        }
-        private void listViewStudyPlan_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Delete)
-            {
-                try
-                {
-                    var studyPlan = listViewStudyPlans.SelectedItems[0].Tag as StudyPlan;
-                    if (studyPlan != null)
-                    {
-                        _facultatives.RemoveStudyPlan(studyPlan);
-                    }
-                }
-                catch (Exception)
-                {
-                    MessageBox.Show("Не выбрана строка с учебным планом");
                 }
             }
         }

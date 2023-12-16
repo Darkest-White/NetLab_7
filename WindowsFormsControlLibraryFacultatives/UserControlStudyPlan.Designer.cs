@@ -114,6 +114,8 @@
             this.Controls.Add(this.labelClient);
             this.Name = "UserControlStudyPlan";
             this.Size = new System.Drawing.Size(474, 58);
+            this.Click += new System.EventHandler(this.UserControlStudyPlan_Click);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.UserControlStudyPlan_Paint);
             this.ResumeLayout(false);
             this.PerformLayout();
 

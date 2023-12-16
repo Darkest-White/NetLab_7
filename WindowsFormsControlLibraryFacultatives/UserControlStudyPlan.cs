@@ -57,17 +57,8 @@ namespace WindowsFormsControlLibraryFacultatives
         private void UserControlStudyPlan_Paint(object sender, PaintEventArgs e)
         {
             textBoxStudent.Text = $@"{StudyPlan.Student.LastName} {StudyPlan.Student.FirstName[0]}.{StudyPlan.Student.MiddleName[0]}.";
-            textBoxSubject.Text = StudyPlan.Subject.SubjectId.ToString("0");
-            //textBoxPeriod.Text = $@"С {StudyPlan.StartDate:dd MMMM yyyy} по {StudyPlan.EndDate:dd MMMM yyyy}";
-            //if (StudyPlan.EndDate < DateTime.Today)
-            //{
-            //    textBoxPeriod.BackColor = Color.Green;
-            //}
-            //else
-            //{
-            //    textBoxPeriod.BackColor = Settlement.StartDate < DateTime.Today ? Color.Yellow : Color.Red;
-            //}
-            //BackColor = _selected ? Color.CornflowerBlue : DefaultBackColor
+            textBoxSubject.Text = StudyPlan.Subject.Title.ToString();
+            textBoxStudyPlan.Text = $@"Лекции:{StudyPlan.Subject.Lectures} Практики: {StudyPlan.Subject.Practices} Лабораторные: {StudyPlan.Subject.LaboratoryWorks}";
         }
         private void UserControlStudyPlan_Click(object sender, EventArgs e)
         {
