@@ -59,6 +59,7 @@ namespace WindowsFormsControlLibraryFacultatives
             textBoxStudent.Text = $@"{StudyPlan.Student.LastName} {StudyPlan.Student.FirstName[0]}.{StudyPlan.Student.MiddleName[0]}.";
             textBoxSubject.Text = StudyPlan.Subject.Title.ToString();
             textBoxStudyPlan.Text = $@"Лекции:{StudyPlan.Subject.Lectures} Практики: {StudyPlan.Subject.Practices} Лабораторные: {StudyPlan.Subject.LaboratoryWorks}";
+            BackColor = _selected ? Color.CornflowerBlue : DefaultBackColor;
         }
         private void UserControlStudyPlan_Click(object sender, EventArgs e)
         {

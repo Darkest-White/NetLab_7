@@ -2,10 +2,10 @@
 using System.Windows.Forms;
 using System.Xml.Linq;
 using ClassLibraryFacultatives;
-using NetLab_6._1;
+using NetLab_7._1;
 using WindowsFormsControlLibraryFacultatives;
 
-namespace NetLab_6
+namespace NetLab_7
 {
     public partial class FormMain : Form
     {

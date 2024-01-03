@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NetLab_6
+namespace NetLab_7
 {
     internal static class Program
     {

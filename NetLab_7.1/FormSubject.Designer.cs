@@ -1,4 +1,4 @@
-﻿namespace NetLab_6
+﻿namespace NetLab_7
 {
     partial class FormSubject
     {

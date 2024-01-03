@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using ClassLibraryFacultatives;
 
-namespace NetLab_6
+namespace NetLab_7
 {
     public partial class FormStudent : Form
     {

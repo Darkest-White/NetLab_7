@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{562767BF-C797-47A1-9B85-4F9B0EB06A07}</ProjectGuid>
+    <ProjectGuid>{7B654145-7F65-44FA-8F0F-2F3EF8904C0B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>WindowsFormsControlLibraryFacultatives</RootNamespace>
     <AssemblyName>WindowsFormsControlLibraryFacultatives</AssemblyName>
@@ -42,25 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControlStudyPlan.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControlStudyPlan.Designer.cs">
-      <DependentUpon>UserControlStudyPlan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControlStudyPlan.Designer.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UserControlStudyPlan.resx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ClassLibraryFacultatives\ClassLibraryFacultatives.csproj">
       <Project>{0ed1bc57-c627-4b95-bc5e-30e276a4043f}</Project>
       <Name>ClassLibraryFacultatives</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="UserControlStudyPlan.resx">
-      <DependentUpon>UserControlStudyPlan.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
